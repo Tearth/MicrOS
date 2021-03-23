@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['occupies_5fmemory_5fduring_5fexecution',['occupies_memory_during_execution',['../structelf__section__header__flags.html#a813103a5e5a7ab29347925aab98ff783',1,'elf_section_header_flags']]],
+  ['oem_5fidentifier',['oem_identifier',['../structfat__header.html#afb7ba27712e1359d37c719bbf25f23a6',1,'fat_header']]],
+  ['offset',['offset',['../structgdt__info.html#a9c603d43b884f76ca9b2be3f3d41212a',1,'gdt_info::offset()'],['../structidt__info.html#ab4320e786b53f65a95649929e7401667',1,'idt_info::offset()'],['../structelf__program__header.html#aa18efe18b7e4751f92d13c20acbde2bf',1,'elf_program_header::offset()']]],
+  ['offset_5f0_5f15',['offset_0_15',['../structidt__entry.html#a16718b087ba85aefd7599d80d6f734c8',1,'idt_entry']]],
+  ['offset_5f16_5f31',['offset_16_31',['../structidt__entry.html#a9d15dc9cb1665cb655d192c7f4ee7929',1,'idt_entry']]],
+  ['old_5fvalue',['old_value',['../pc__speaker_8c.html#a1841d4309872a4fb32510c13e9fed81a',1,'pc_speaker.c']]],
+  ['opcode',['opcode',['../structfenv__t.html#aded5414ae3245da518b56cd57bbebaaf',1,'fenv_t::opcode()'],['../structmicros__signal__fpu__state.html#aac9b990784e884ec1323aabf24a015a2',1,'micros_signal_fpu_state::opcode()'],['../structfpu__state.html#a19016705666a64009966ce0e6a846dc8',1,'fpu_state::opcode()']]],
+  ['operand_5fpointer_5foffset',['operand_pointer_offset',['../structmicros__signal__fpu__state.html#a13821a381f80445f3db212444ca4bdc9',1,'micros_signal_fpu_state::operand_pointer_offset()'],['../structfpu__state.html#a18005e48cc7d2ccc279da1fc80bc04b4',1,'fpu_state::operand_pointer_offset()']]],
+  ['operand_5fpointer_5fselector',['operand_pointer_selector',['../structmicros__signal__fpu__state.html#a0e74233c2dac5a029af284430b70333f',1,'micros_signal_fpu_state::operand_pointer_selector()'],['../structfpu__state.html#a0518aa72333c2c6ed95553e5512f16ba',1,'fpu_state::operand_pointer_selector()']]],
+  ['optional_5fata_5fdevice_5f28_5fbit_5fcommand_5fsupport',['optional_ata_device_28_bit_command_support',['../structadditional__supported__fields.html#a55cd6748e6d1776e5570a22af94b4f78',1,'additional_supported_fields']]],
+  ['os_5fabi',['os_abi',['../structelf__header.html#a527fcc639786275c1242572ab5864d5c',1,'elf_header']]],
+  ['osxsave',['osxsave',['../structcpuid__0x01h__ecx__fields.html#ab955233e9668b964f9f0f99020be1a7e',1,'cpuid_0x01h_ecx_fields']]],
+  ['overflow',['overflow',['../structfcontrol__t.html#a0b729dbc1460f471dc794a151ec82377',1,'fcontrol_t::overflow()'],['../structfexcept__t.html#a94350a7da88cf0137656d7b60d4da3b2',1,'fexcept_t::overflow()']]],
+  ['overlapped_5fmode_5fservice_5frequest',['overlapped_mode_service_request',['../structharddisk__io__control__status__register__fields.html#a26a62478a16d85ac2eed867d66b5ac2a',1,'harddisk_io_control_status_register_fields']]],
+  ['owner_5fdelete_5frename_5fattribute_5fchange',['owner_delete_rename_attribute_change',['../structfat__directory__entry__access__rights.html#ab9431636c6c6113f54b393fb339d4223',1,'fat_directory_entry_access_rights']]],
+  ['owner_5fexecute',['owner_execute',['../structfat__directory__entry__access__rights.html#a2337bd16be5341c8e387c15175a09488',1,'fat_directory_entry_access_rights']]],
+  ['owner_5fread_5fcopy',['owner_read_copy',['../structfat__directory__entry__access__rights.html#ab77c4cca1c1bbba500ccd2d21763e41b',1,'fat_directory_entry_access_rights']]],
+  ['owner_5fwrite_5fmodify',['owner_write_modify',['../structfat__directory__entry__access__rights.html#a0dde88bac1310251b5651186816729c1',1,'fat_directory_entry_access_rights']]]
+];

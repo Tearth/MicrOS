@@ -1,0 +1,27 @@
+var heap_8h =
+[
+    [ "ENTRY_HEADER_SIZE", "heap_8h.html#a9710c872730a511989f3a91c597a761c", null ],
+    [ "heap_alloc", "heap_8h.html#a4731beee488a5f15f4f063533dcc1df2", null ],
+    [ "heap_dealloc", "heap_8h.html#ae426684a1356a3941b0ad065282e02a6", null ],
+    [ "heap_dump", "heap_8h.html#aa7eae3a2b37c96ea5d195f328431e40c", null ],
+    [ "heap_get_kernel_heap", "heap_8h.html#ae8f26e8d45514df2a51ba03c16de29dc", null ],
+    [ "heap_get_object_size", "heap_8h.html#a4d1a9079d7a96aa3ae9f76ce7e1176cc", null ],
+    [ "heap_get_user_heap", "heap_8h.html#a0780dee28399b40268fe2c6372e5629a", null ],
+    [ "heap_init_heap", "heap_8h.html#aff1259a903a1bd89fde359f42be1277e", null ],
+    [ "heap_init_kernel_heap", "heap_8h.html#aae76e34f778fbb93a38c9232f4ef069a", null ],
+    [ "heap_init_user_heap", "heap_8h.html#ae676749a01df233b8c953e6cdfe0372a", null ],
+    [ "heap_kernel_alloc", "heap_8h.html#af15e8419aa2f5e76f796b222f6bf4793", null ],
+    [ "heap_kernel_dealloc", "heap_8h.html#a3a59c4b2af07c76bf0be1f5f0be1e58e", null ],
+    [ "heap_kernel_dump", "heap_8h.html#af4dc41c5bf9777b54e5cc25ac0cd5560", null ],
+    [ "heap_kernel_realloc", "heap_8h.html#aaac115b42d467699daba0c3a8806db9d", null ],
+    [ "heap_kernel_verify_integrity", "heap_8h.html#ae9ed16fe201ceec7828922e282e45f08", null ],
+    [ "heap_realloc", "heap_8h.html#a280677185e1024387552bcd8204e9599", null ],
+    [ "heap_set_kernel_heap", "heap_8h.html#af8740225ffe5938ae1e4cc04197c5b15", null ],
+    [ "heap_set_user_heap", "heap_8h.html#afafbd8a1e8e56c7a7531041da95283e1", null ],
+    [ "heap_user_alloc", "heap_8h.html#afc5040a909e3daa197da334ef33c3e1e", null ],
+    [ "heap_user_dealloc", "heap_8h.html#a43adf61152ec064848f8434823b158d7", null ],
+    [ "heap_user_dump", "heap_8h.html#ac43ce315ba08a07b913446d412c8cd09", null ],
+    [ "heap_user_realloc", "heap_8h.html#a4201a2a4f255cef2df77d13c41bf38fe", null ],
+    [ "heap_user_verify_integrity", "heap_8h.html#a53f6db81a978daf796f763746b41dfd6", null ],
+    [ "heap_verify_integrity", "heap_8h.html#abb0d73d91cef8f19e7d00a0d9a139b05", null ]
+];

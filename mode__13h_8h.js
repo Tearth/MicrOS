@@ -1,0 +1,27 @@
+var mode__13h_8h =
+[
+    [ "MODE13H_HEIGHT", "mode__13h_8h.html#a5a1418216062c220bd4bcae8ce90e398", null ],
+    [ "MODE13H_WIDTH", "mode__13h_8h.html#a866d9f2bceab1b6d06f88655d0b3437d", null ],
+    [ "mode13h_clear_screen", "mode__13h_8h.html#a36ca0f798a253bb13f78f683c5b20953", null ],
+    [ "mode13h_clear_screen_buffered", "mode__13h_8h.html#a6109b90ac386090eff95b2670b30d230", null ],
+    [ "mode13h_clear_screen_external_buffer", "mode__13h_8h.html#ad66b2847f460df789876ac081963f3a1", null ],
+    [ "mode13h_create_external_buffer", "mode__13h_8h.html#a3d339d3de401d07b69e5d983fc449f4b", null ],
+    [ "mode13h_draw_circle", "mode__13h_8h.html#a4b20c936a8a0bf8873aa1f1d3f1a8506", null ],
+    [ "mode13h_draw_circle_buffered", "mode__13h_8h.html#a0f761be413845b06ca848f888f95ffd4", null ],
+    [ "mode13h_draw_circle_external_buffer", "mode__13h_8h.html#a62e9fb08f4985afcc72a14bb59384d82", null ],
+    [ "mode13h_draw_line", "mode__13h_8h.html#ac664626ef3764261ad2550ac1eeffa66", null ],
+    [ "mode13h_draw_line_buffered", "mode__13h_8h.html#a02f202718e20c3662d284c9d510626f6", null ],
+    [ "mode13h_draw_line_external_buffer", "mode__13h_8h.html#aad412f54674642b38029d6911be41d35", null ],
+    [ "mode13h_draw_pixel", "mode__13h_8h.html#ab084ea548cbea0da4118b7b2fa43b075", null ],
+    [ "mode13h_draw_pixel_buffered", "mode__13h_8h.html#ace0fa0a64cb2fb1101d828316f9a5373", null ],
+    [ "mode13h_draw_pixel_external_buffer", "mode__13h_8h.html#ae7304e6b93bdbbcf772638dca7645f98", null ],
+    [ "mode13h_draw_rectangle", "mode__13h_8h.html#a61fc9d12539c22cb61d8fd69215124a4", null ],
+    [ "mode13h_draw_rectangle_buffered", "mode__13h_8h.html#a4532248b38dff4b3ba4a8ac5a5724a82", null ],
+    [ "mode13h_draw_rectangle_external_buffer", "mode__13h_8h.html#ad64dcd2df56a415f903962cc1a72aa27", null ],
+    [ "mode13h_is_buffer_on", "mode__13h_8h.html#af5f1eafe2e3722c437a894cf465c05ff", null ],
+    [ "mode13h_set_mode", "mode__13h_8h.html#ad41e78a70e35af4c4beabd1255b755b9", null ],
+    [ "mode13h_swap_buffers", "mode__13h_8h.html#a7f844d0a0c4cb9f2656b756f177e0ae5", null ],
+    [ "mode13h_swap_external_buffer", "mode__13h_8h.html#a08b5d7c796e8fe26e9c96b79ec365823", null ],
+    [ "mode13h_turn_off_buffer", "mode__13h_8h.html#a54afda3b2038a7b9fd55f875768f8594", null ],
+    [ "mode13h_turn_on_buffer", "mode__13h_8h.html#a0ddb59e9c7ed67be182adb18f4e687d3", null ]
+];

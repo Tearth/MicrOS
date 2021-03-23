@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['n_5fcs_5fprecedes',['n_cs_precedes',['../structlconv.html#ad118b68a229527f7e96538ac875169ad',1,'lconv']]],
+  ['n_5fsep_5fby_5fspace',['n_sep_by_space',['../structlconv.html#ab7ac20ce034900155183b32fc3c6d9a3',1,'lconv']]],
+  ['n_5fsign_5fposn',['n_sign_posn',['../structlconv.html#ae0bbe6f545952daef5a8cbdd054a184e',1,'lconv']]],
+  ['naa_5f0_5f3',['naa_0_3',['../structworldwide__name__fields.html#a9373e8e9bc7679724b2cb291d4f17207',1,'worldwide_name_fields']]],
+  ['name',['name',['../structmicros__filesystem__file__info.html#a5726895cbe1ef2d7d7681bd91f2e5153',1,'micros_filesystem_file_info::name()'],['../structmicros__filesystem__directory__info.html#a529d839d32ec10d28a9af2ba130c874f',1,'micros_filesystem_directory_info::name()'],['../structmicros__process__user__info.html#acf369a8f06efc557521c8d21bab3b571',1,'micros_process_user_info::name()'],['../structfilesystem__directory__info.html#ada9d5d1a9e2f71c343527f70971f920e',1,'filesystem_directory_info::name()'],['../structfilesystem__file__info.html#a19519eb7f0b14b2b8fe3f12246e7f8bb',1,'filesystem_file_info::name()'],['../structprocess__info.html#a72d01ed0f2f1698a22e96afe4825de9b',1,'process_info::name()'],['../structprocess__user__info.html#a6c7e1169d13b4f6127ad38a29d948ea6',1,'process_user_info::name()']]],
+  ['name_5foffset',['name_offset',['../structelf__section__header.html#a5b9641235c6f0ffac97999c2a7e2696d',1,'elf_section_header']]],
+  ['ncq',['ncq',['../structserial__ata__capabilities__fields.html#a851b13d6c3e9a55e9f0b7268d790384f',1,'serial_ata_capabilities_fields']]],
+  ['ncq_5fautosense',['ncq_autosense',['../structserial__ata__features__supported__fields.html#aac333b41b7d8bedf16d24d38e4180572',1,'serial_ata_features_supported_fields']]],
+  ['ncq_5fpriority',['ncq_priority',['../structserial__ata__capabilities__fields.html#aed45012b837ebe040fc80701babcc9a6',1,'serial_ata_capabilities_fields']]],
+  ['ncq_5fstreaming',['ncq_streaming',['../structserial__ata__capabilities__fields.html#ac2c8c727629c347dae72cc3f956ebad0',1,'serial_ata_capabilities_fields']]],
+  ['needed_5fnum_5flock',['needed_num_lock',['../structkeyboard__extended__state__flags.html#ae062274a0811d806b27960989e3d5490',1,'keyboard_extended_state_flags']]],
+  ['negative_5fsign',['negative_sign',['../structlconv.html#a40dbb1b1d7fdf4926145138f5d8f6f5f',1,'lconv']]],
+  ['next',['next',['../structmicros__heap__entry.html#a80c5293d569873cc2650cd4772aa52c7',1,'micros_heap_entry::next()'],['../structheap__entry.html#a5eb7bbd3aeb64622bb4bb843d44c9b06',1,'heap_entry::next()']]],
+  ['next_5fprocess_5fid',['next_process_id',['../process__manager_8c.html#af23be3b2c73913d8e08dbb932e3c3b3b',1,'process_manager.c']]],
+  ['next_5fterminal_5fid',['next_terminal_id',['../terminal__manager_8c.html#ae500109e3ce5cdc33580b9ccf46c6049',1,'terminal_manager.c']]],
+  ['non_5fstandard_5fhandlind_5frequired',['non_standard_handlind_required',['../structelf__section__header__flags.html#ad3891cfab8b74b00dc17f8fc397a8d1f',1,'elf_section_header_flags']]],
+  ['non_5fzero_5fbuffer_5foffset',['non_zero_buffer_offset',['../structserial__ata__features__supported__fields.html#aa90f982e05ca232c205637ac10bbe671',1,'serial_ata_features_supported_fields::non_zero_buffer_offset()'],['../structserial__ata__features__enabled__fields.html#a5ef061c8195e1c969fb90b3aecb1186c',1,'serial_ata_features_enabled_fields::non_zero_buffer_offset()']]],
+  ['nop_5fcommand',['nop_command',['../structcommand__set__support__fields.html#a6ec72b38ff358cc3beb7c2fe5521c488',1,'command_set_support_fields::nop_command()'],['../structcommand__set__active__fields.html#ac4ac77dfd3ac4e084ee9a41262d19fca',1,'command_set_active_fields::nop_command()']]],
+  ['num_5flock_5factive',['num_lock_active',['../structkeyboard__state__flags.html#a0725b8a2a0c6138adf13590ad985ae9d',1,'keyboard_state_flags']]],
+  ['num_5flock_5fled',['num_lock_led',['../structkeyboard__extended__state__flags.html#a4ed855ff8eaa55b10a0fad56cd67f5c7',1,'keyboard_extended_state_flags']]],
+  ['num_5flock_5fpressed',['num_lock_pressed',['../structkeyboard__state__flags.html#abd25e5f273c9f18c219b704e1d6e0820',1,'keyboard_state_flags']]],
+  ['number_5fof_5fdevices',['number_of_devices',['../pci_8c.html#a3edc584d97e328cdff982b8b3270cace',1,'pci.c']]],
+  ['number_5fof_5flogical_5fsectors_5fper_5fdrq',['number_of_logical_sectors_per_drq',['../structharddisk__identify__device__data__fields.html#a68a53c1118bf73de664c3c2d68c8d8e7',1,'harddisk_identify_device_data_fields']]]
+];

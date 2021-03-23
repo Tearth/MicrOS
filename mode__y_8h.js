@@ -1,0 +1,27 @@
+var mode__y_8h =
+[
+    [ "MODEY_HEIGHT", "mode__y_8h.html#a626102906c7c2e199ed28b9c9647519e", null ],
+    [ "MODEY_WIDTH", "mode__y_8h.html#aa4cd1d241d38b4ad119323d45e2738bc", null ],
+    [ "modey_clear_screen", "mode__y_8h.html#a0ccce1773fa279f0758a332ff87aedd8", null ],
+    [ "modey_clear_screen_buffered", "mode__y_8h.html#a03500e6ac471c0f3dda61a618a42ccfe", null ],
+    [ "modey_clear_screen_external_buffer", "mode__y_8h.html#ab5da57db1c6105c7770ca8e7eb7705a1", null ],
+    [ "modey_create_external_buffer", "mode__y_8h.html#a5f9afc9ec43860cf250cfae48b69a631", null ],
+    [ "modey_draw_circle", "mode__y_8h.html#ab12e3acf0d8d737bb9d68e7a1ac8de88", null ],
+    [ "modey_draw_circle_buffered", "mode__y_8h.html#aa8937ef2777795836acc0b6eebb0c9f3", null ],
+    [ "modey_draw_circle_external_buffer", "mode__y_8h.html#ad703e73776c85b93ea959b2eb5c7fffb", null ],
+    [ "modey_draw_line", "mode__y_8h.html#a952e6740087f9b3a5f90fe998fa5991e", null ],
+    [ "modey_draw_line_buffered", "mode__y_8h.html#a1974a442cb04bec14a9c2202fcefafd6", null ],
+    [ "modey_draw_line_external_buffer", "mode__y_8h.html#a1da77c199ef5a0b70792e988403bc4f0", null ],
+    [ "modey_draw_pixel", "mode__y_8h.html#a981bd8822885c6abc65770275ee997d8", null ],
+    [ "modey_draw_pixel_buffered", "mode__y_8h.html#aaf99a4e9812b37ef3737c23a9f73fdda", null ],
+    [ "modey_draw_pixel_external_buffer", "mode__y_8h.html#a37e3631da7ec3674d81c395d126c12a2", null ],
+    [ "modey_draw_rectangle", "mode__y_8h.html#a6a204b21f608175dd972e916bfa7be43", null ],
+    [ "modey_draw_rectangle_buffered", "mode__y_8h.html#a3fdb06c5b99f5c2427d58c0979e96da2", null ],
+    [ "modey_draw_rectangle_external_buffer", "mode__y_8h.html#afcca042162b4537fa3f64bd56084d8e3", null ],
+    [ "modey_is_buffer_on", "mode__y_8h.html#a7ae3ec4bc8e9d55e2772b8920298a69f", null ],
+    [ "modey_set_mode", "mode__y_8h.html#a5243c9ded52318790ac3c5aafc72f82c", null ],
+    [ "modey_swap_buffers", "mode__y_8h.html#acd2a633596ea632bb6652c3682814712", null ],
+    [ "modey_swap_external_buffer", "mode__y_8h.html#a3705c9403c84a4cc938cde8b9ca01909", null ],
+    [ "modey_turn_off_buffer", "mode__y_8h.html#a12dd5388ff10817f4a106ee2030239f3", null ],
+    [ "modey_turn_on_buffer", "mode__y_8h.html#aa084f782c98bdf183a8628a117f99b6a", null ]
+];

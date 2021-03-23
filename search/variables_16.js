@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['value',['value',['../unioncpuid__0x00h.html#a8fbf10b96f3477201cdcba16c94a2d57',1,'cpuid_0x00h::value()'],['../unioncpuid__0x01h.html#a111adfcc74c248abf2e9811544602dbc',1,'cpuid_0x01h::value()'],['../unioncpuid__0x04h.html#a816c027bc21345dc2853d036c3ebb5f2',1,'cpuid_0x04h::value()'],['../unionharddisk__io__error__register.html#ab801a4ecb59bb01dd59f609c19092f6e',1,'harddisk_io_error_register::value()'],['../unionharddisk__io__drive__head__register.html#af106c28f7d2f7babd02b69730b50f508',1,'harddisk_io_drive_head_register::value()'],['../unionharddisk__io__control__status__register.html#a0011bbdbaab1d078cf20e5ceb3acc5d1',1,'harddisk_io_control_status_register::value()'],['../unionharddisk__control__device__control__register.html#a810eb99fe800525b569d0af2839adb12',1,'harddisk_control_device_control_register::value()'],['../unionharddisk__control__drive__address__register.html#a1c6b566ac61afb6a3733b5b90e18fbda',1,'harddisk_control_drive_address_register::value()'],['../unionvga__color.html#abe3efd482ed3df118ba5e21c9593998e',1,'vga_color::value()'],['../unionscreen__char.html#a49d08d403e12c24ff920fb4b525acff3',1,'screen_char::value()']]],
+  ['value1',['value1',['../unionmagic__union.html#ac1c3cff96a626cc8fbfb24c08ff75d08',1,'magic_union']]],
+  ['value2',['value2',['../unionmagic__union.html#a269b4d4b95427f65fb46332db38de892',1,'magic_union']]],
+  ['value_5f80h',['value_80h',['../structharddisk__identify__device__data__fields.html#a67199ddbd76a8a72211a3c0dd2ff88e4',1,'harddisk_identify_device_data_fields']]],
+  ['values',['values',['../unionharddisk__identify__device__data.html#adc584cef7ea79f76d629797cfc1b8c2c',1,'harddisk_identify_device_data']]],
+  ['vendor_5fid',['vendor_id',['../unionpci__device.html#a6cf5c8c28f2f9db8b1f6a1e3cdc37029',1,'pci_device']]],
+  ['vendor_5fspecific',['vendor_specific',['../structharddisk__identify__device__data__fields.html#a3ddfe39ad293d5d776bee757c90ae0e3',1,'harddisk_identify_device_data_fields']]],
+  ['version_5f32',['version_32',['../structelf__header.html#a9690e17568a3293085f9d7d0b3d81b7e',1,'elf_header']]],
+  ['version_5f8',['version_8',['../structelf__header.html#afcfeefd842c97ec0561992bb166787e4',1,'elf_header']]],
+  ['vga_5fcurrent_5fcolumns',['vga_current_columns',['../vga_8c.html#a35308e20ddc0c30092f079d560711315',1,'vga.c']]],
+  ['vga_5fcurrent_5fmax_5fscreens',['vga_current_max_screens',['../vga_8c.html#ab7ee057bbcda39bfe97876edfb9ded00',1,'vga.c']]],
+  ['vga_5fcurrent_5fmode',['vga_current_mode',['../vga_8c.html#a0cc1d3753c0759d94bdf706c2839b0f2',1,'vga.c']]],
+  ['vga_5fcurrent_5fprinting_5fscreen',['vga_current_printing_screen',['../vga_8c.html#af7d42a3fe60fffe7829c1a13df2cf52c',1,'vga.c']]],
+  ['vga_5fcurrent_5frows',['vga_current_rows',['../vga_8c.html#aff1009d66e3d82ec83ee819a01bd0b4d',1,'vga.c']]],
+  ['vga_5fcurrent_5fscreen_5foffset',['vga_current_screen_offset',['../vga_8c.html#a27baa0a7a1b3252f3565af2157fb8e4f',1,'vga.c']]],
+  ['vga_5fscreen_5foffset',['vga_screen_offset',['../vga_8c.html#a0f490c13364cf857a2c4b315e4d047b3',1,'vga.c']]],
+  ['vga_5fvideo',['vga_video',['../vga_8c.html#a3ac488653ba1172e13a8356ab221ab52',1,'vga.c']]],
+  ['virtual_5faddress',['virtual_address',['../structelf__program__header.html#a175c788a68c4f61a98d6eadefa8de8d5',1,'elf_program_header::virtual_address()'],['../structelf__section__header.html#adc3243bcdfc62c28188c191467da6f99',1,'elf_section_header::virtual_address()']]],
+  ['vme',['vme',['../structcpuid__0x01h__edx__fields.html#a2c30a4f77cc74f39ae8f4a8271e4497b',1,'cpuid_0x01h_edx_fields']]],
+  ['vmx',['vmx',['../structcpuid__0x01h__ecx__fields.html#afc957b1c420140f204ef3f1b6fe55f10',1,'cpuid_0x01h_ecx_fields']]],
+  ['volume_5fid',['volume_id',['../structfat__header.html#ae8e71454971ecf407655513f38b12723',1,'fat_header']]],
+  ['volume_5flabel',['volume_label',['../structfat__directory__entry__file__attributes.html#a09223a2426f00a9c2052a3b8fdd6bb0b',1,'fat_directory_entry_file_attributes::volume_label()'],['../structfat__header.html#a93eb73e7dfa98b48403d805b29f64b9a',1,'fat_header::volume_label()']]]
+];
