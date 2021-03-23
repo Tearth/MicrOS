@@ -6,7 +6,7 @@
 #include "time.h"
 #include "micros.h"
 
-extern unsigned int seed;
+unsigned int seed;
 
 //! Maximum value returned by rand
 #define RAND_MAX INT32_MAX

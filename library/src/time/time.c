@@ -1,7 +1,5 @@
 #include "../time.h"
 
-tm converted_time;
-
 time_t time(time_t* timer)
 {
     micros_rtc_time rtc_time;

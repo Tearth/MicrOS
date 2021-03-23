@@ -3,8 +3,8 @@
 
 #include <stdint.h>
 
-void drawMicrOSLogoIn13H();
-void drawLenaIn13H();
+/*void drawMicrOSLogoIn13H();
+void drawLenaIn13H();*/
 
 char vga_gmode_get_mode();
 

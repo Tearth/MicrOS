@@ -33,12 +33,12 @@ $(OUTPUT_FILE): $(C_OBJECTS) $(ASM_OBJECTS)
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	@echo "=== Compiling C file $< into object $@ ==="
 	@mkdir -p '$(@D)'
-	@$(GCC) -c $(CURDIR)/$< -o $@ -MMD -MF $(@:.o=.d) $(GCC_COMPILE_FLAGS)
+	@$(GCC) -c $(PWD)/$< -o $@ -MMD -MF $(@:.o=.d) $(GCC_COMPILE_FLAGS)
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.asm
 	@echo "=== Compiling asm file $< into object $@ ==="
 	@mkdir -p '$(@D)'
-	@$(NASM) $(CURDIR)/$< -f elf32 -o $@
+	@$(NASM) $(PWD)/$< -f elf32 -o $@
 
 -include $(DEPS)
 

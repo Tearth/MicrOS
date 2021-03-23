@@ -109,13 +109,13 @@ typedef struct file
 } FILE;
 
 //! Standard input (default is keyboard).
-extern FILE *stdin;
+FILE *stdin;
 
 //! Standard output (default is console).
-extern FILE *stdout;
+FILE *stdout;
 
 //! Standard error output (default is console).
-extern FILE *stderr;
+FILE *stderr;
 
 #ifdef __cplusplus
 extern "C" {

@@ -1,5 +1,7 @@
 #include "../signal.h"
 
+void (*signal_handlers[6])(int);
+
 void __signal_init()
 {
     signal_handlers[0] = default_sigabrt_handler;
