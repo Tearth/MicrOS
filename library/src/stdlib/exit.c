@@ -2,5 +2,5 @@
 
 void exit(int status)
 {
-    micros_process_exit(status);
+    micros_process_exit_process(status);
 }

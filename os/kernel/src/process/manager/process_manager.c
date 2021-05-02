@@ -39,6 +39,7 @@ uint32_t process_manager_create_process(char *path, char *parameters, uint32_t p
     process->current_cpu_usage = 0;
     process->last_cpu_usage = 0;
     process->sleep_deadline = 0;
+    process->is_thread = false;
 
     process->page_directory = heap_kernel_alloc(1024 * 4, 1024 * 4);
 
@@ -129,6 +130,59 @@ release:
     return process->id;
 }
 
+uint32_t process_manager_create_thread(uint32_t process_id, void *entry_point, void *stack)
+{
+    process_info *process = process_manager_get_process_info(process_id);
+    
+    process_info *thread = (process_info *)heap_kernel_alloc(sizeof(process_info), 0);
+    thread->id = next_process_id++;
+    thread->parent_id = process_id;
+    thread->status = process_status_ready;
+    thread->current_cpu_usage = 0;
+    thread->last_cpu_usage = 0;
+    thread->sleep_deadline = 0;
+    thread->page_directory = process->page_directory;
+    thread->user_stack = stack;
+    thread->heap = process->heap;
+    thread->signal_handler = process->signal_handler;
+    thread->terminal_id = process->terminal_id;
+    thread->is_thread = true;
+
+    thread->state.eip = (uint32_t)entry_point;
+    thread->state.esp = (uint32_t)thread->user_stack - 2 * sizeof(void*);
+    thread->state.interrupt_number = 0;
+    thread->state.eflags = 0x200;
+    thread->state.cs = 0x1B;
+    thread->state.ss = 0x23;
+
+    thread->state.registers.eax = 0;
+    thread->state.registers.ebx = 0;
+    thread->state.registers.ecx = 0;
+    thread->state.registers.edx = 0;
+    thread->state.registers.esp_unused = (uint32_t)thread->state.esp;
+    thread->state.registers.ebp = 0;
+    thread->state.registers.esi = 0;
+    thread->state.registers.edi = 0;
+
+    thread->state.fpu_state.control_word = 0x37F;
+    thread->state.fpu_state.status_word = 0;
+    thread->state.fpu_state.tag_word = 0xFFFF;
+    thread->state.fpu_state.instruction_pointer_offset = 0;
+    thread->state.fpu_state.instruction_pointer_selector = 0;
+    thread->state.fpu_state.opcode = 0;
+    thread->state.fpu_state.operand_pointer_offset = 0;
+    thread->state.fpu_state.operand_pointer_selector = 0;
+    memcpy(thread->name, "SLAVE", 32);
+
+    if (processes.count == 0)
+    {
+        current_process_id = thread->id;
+    }
+
+    kvector_add(&processes, thread);
+    return thread->id;
+}
+
 process_info *process_manager_get_process(uint32_t process_id)
 {
     for (uint32_t i = 0; i < processes.count; i++)
@@ -163,6 +217,12 @@ void process_manager_save_current_process_state(interrupt_state *state, uint32_t
     memcpy(&old_process->state, state, sizeof(interrupt_state));
 
     old_process->current_cpu_usage += delta;
+    
+    if (old_process->is_thread)
+    {
+        process_info *parent_process = process_manager_get_process_info(old_process->parent_id);
+        parent_process->current_cpu_usage += delta;
+    }
 }
 
 void process_manager_switch_to_next_process()
@@ -219,14 +279,13 @@ void process_manager_switch_to_next_process()
     enter_user_space(&new_process->state);
 }
 
-void process_manager_close_current_process()
+void process_manager_close_current_process(bool is_thread)
 {
     process_info *current_process = processes.data[current_process_id];
-    dettached_process_from_terminal(current_process);
-    process_manager_close_process(current_process->id);
+    process_manager_close_process(current_process->id, is_thread, true);
 }
 
-void process_manager_close_process(uint32_t process_id)
+void process_manager_close_process(uint32_t process_id, bool is_thread, bool allow_to_switch)
 {
     io_disable_interrupts();
     
@@ -234,20 +293,25 @@ void process_manager_close_process(uint32_t process_id)
     process_info* process = processes.data[process_index];
     kvector_remove(&processes, process_index);
     
-    void *page_directory_backup = (uint32_t*)paging_get_page_directory();
-    void *heap_backup = (uint32_t*)heap_get_user_heap();
+    dettached_process_from_terminal(process);
     
-    paging_set_page_directory(process->page_directory);
-    heap_set_user_heap((void *)(process->heap));
-    
-    uint32_t allocated_pages_count = virtual_memory_get_allocated_pages_count(false);
-    for(uint32_t i=0; i<allocated_pages_count; i++)
+    if (!is_thread)
     {
-        virtual_memory_dealloc_last_page(false);
+        void *page_directory_backup = (uint32_t*)paging_get_page_directory();
+        void *heap_backup = (uint32_t*)heap_get_user_heap();
+        
+        paging_set_page_directory(process->page_directory);
+        heap_set_user_heap((void *)(process->heap));
+        
+        uint32_t allocated_pages_count = virtual_memory_get_allocated_pages_count(false);
+        for(uint32_t i=0; i<allocated_pages_count; i++)
+        {
+            virtual_memory_dealloc_last_page(false);
+        }
+        
+        paging_set_page_directory(page_directory_backup);
+        heap_set_user_heap(heap_backup);
     }
-    
-    paging_set_page_directory(page_directory_backup);
-    heap_set_user_heap(heap_backup);
     
     for(int i = processes.count - 1; i >= 0; i--)
     {
@@ -259,29 +323,32 @@ void process_manager_close_process(uint32_t process_id)
         
         if(potential_child_process->parent_id == process->id)
         {
-            process_manager_close_process(potential_child_process->id);
+            process_manager_close_process(potential_child_process->id, potential_child_process->is_thread, false);
         }
     }
     
     io_enable_interrupts();
 
-    if (processes.count > 0)
+    if (allow_to_switch)
     {
-        bool switch_to_next_process = process_index == current_process_id;
-        
-        if(process->id <= current_process_id)
+        if (processes.count > 0)
         {
-            current_process_id--;
+            bool switch_to_next_process = process_index == current_process_id;
+            
+            if(process->id <= current_process_id)
+            {
+                current_process_id--;
+            }
+            
+            if(switch_to_next_process)
+            {
+                process_manager_switch_to_next_process();
+            }
         }
-        
-        if(switch_to_next_process)
+        else
         {
-            process_manager_switch_to_next_process();
+            panic_screen_show(NULL, 31, "No active process");
         }
-    }
-    else
-    {
-        panic_screen_show(NULL, 31, "No active process");
     }
 }
 
@@ -425,6 +492,7 @@ void process_manager_convert_process_info_to_user_info(process_info *process, pr
     user_info->status = (uint32_t)process->status;
     user_info->cpu_usage = process->last_cpu_usage;
     user_info->memory_usage = process_manager_get_process_memory_usage(process);
+    user_info->is_thread = process->is_thread;
 }
 
 uint32_t process_manager_get_process_memory_usage(process_info *process)

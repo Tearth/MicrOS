@@ -40,12 +40,12 @@ Documentation: https://tearth.github.io/MicrOS/
 * Standard library for C
 * ATA Hard disk drive support
 * CPUID
+* Multithreading
 
 ## TODO
 * Other standards of hard disk drive support
 * More advanced scheduler with priorities and IO blocking
 * Support for network cards (and protocols related to them)
-* Support for threads
 * Lock/mutex, synchronization objects, queues...
 * ...
 

@@ -10,6 +10,7 @@ typedef struct process_user_info
     uint32_t status;
     float cpu_usage;
     uint32_t memory_usage;
+    bool is_thread;
 } __attribute__((packed)) process_user_info;
 
 #endif

@@ -131,7 +131,7 @@ int8_t destroy_terminal(uint32_t terminal_id)
 
     for(uint32_t i; i<s.process_number; i++)
     {
-        process_manager_close_process(s.attached_processes[i]->id);
+        process_manager_close_process(s.attached_processes[i]->id, s.attached_processes[i]->is_thread, true);
     }
 
     heap_kernel_dealloc(s.attached_processes);

@@ -18,6 +18,7 @@ typedef struct process_info
     uint32_t id;
     uint32_t parent_id;
     char name[32];
+    bool is_thread;
 
     process_status status;
     uint32_t size_in_memory;

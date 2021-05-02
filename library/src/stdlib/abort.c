@@ -2,5 +2,5 @@
 
 void abort()
 {
-    micros_process_exit(-1);
+    micros_process_exit_process(-1);
 }

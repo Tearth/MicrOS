@@ -15,5 +15,6 @@ void syscall_process_start_process(interrupt_state *state);
 void syscall_process_set_current_process_signal_handler(interrupt_state *state);
 void syscall_process_finish_signal_handler(interrupt_state *state);
 void syscall_process_wait_for_process(interrupt_state *state);
+void syscall_process_start_thread(interrupt_state *state);
 
 #endif

@@ -2,6 +2,7 @@
 #define MICROS_PROCESS_H
 
 #include <stdbool.h>
+#include "../stdlib.h"
 #include "micros_interrupts.h"
 
 //! Process status retrieved from the kernel
@@ -43,6 +44,9 @@ typedef struct micros_process_user_info
     
     //! Current process memory usage calculated by the kernel
     uint32_t memory_usage;
+    
+    //! Flag indicating if this is a process or a thread
+    bool is_thread;
 } __attribute__((packed)) micros_process_user_info;
 
 //! Process registers state
@@ -142,9 +146,9 @@ extern "C" {
 //! Forces current process to exit
 /*!
     Forces current process to exit with the specified status code (typically 0 means success).
-    \param status Exis status code.
+    \param status Exit status code.
 */
-void micros_process_exit(int status);
+void micros_process_exit_process(int status);
 
 //! Returns number of processes
 /*!
@@ -220,6 +224,21 @@ void micros_process_finish_signal_handler(micros_signal_params *old_state);
     \param process_id_to_wait Process ID to wait.
 */
 void micros_process_wait_for_process(uint32_t process_id_to_wait);
+
+//! Creates new thread
+/*!
+    Creates new thread with the specified parameters.
+    \param entry_point Address of the entry point from which thread will start.
+    \param param Parameter which will be passed to the thread function.
+    \return ID of the create thread.
+*/
+uint32_t micros_process_start_thread(void *entry_point, void *param);
+
+//! Forces current thread to exit
+/*!
+    Forces current thread to exit.
+*/
+void micros_process_abort_thread();
 
 #ifdef __cplusplus
 }

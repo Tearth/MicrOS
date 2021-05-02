@@ -2,7 +2,7 @@
 
 void syscall_process_exit(interrupt_state *state)
 {
-    process_manager_close_current_process(state);
+    process_manager_close_current_process(state->registers.ecx);
 }
 
 void syscall_process_get_processes_count(interrupt_state *state)
@@ -59,4 +59,15 @@ void syscall_process_finish_signal_handler(interrupt_state *state)
 void syscall_process_wait_for_process(interrupt_state *state)
 {
     process_manager_current_process_wait_for_process(state->registers.ebx);
+}
+
+void syscall_process_start_thread(interrupt_state *state)
+{
+    uint32_t process_id = process_manager_get_current_process()->id;
+    uint32_t thread_id = process_manager_create_thread(process_id, (void *)state->registers.ebx, (void *)state->registers.ecx);
+    
+    terminal_struct* current_terminal = find_terminal_for_process(process_id);
+    attach_process_to_terminal(current_terminal->terminal_id, process_manager_get_process(thread_id));
+    
+    state->registers.eax = thread_id;
 }
