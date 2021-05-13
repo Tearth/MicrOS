@@ -34,6 +34,8 @@
 #include <time.h>
 #include "terminal/terminal_manager.h"
 #include "cpu/cpuid/cpuid.h"
+#include "drivers/mouse/mouse.h"
+
 
 typedef struct _linesStruct
 {
@@ -342,6 +344,8 @@ void startup()
 
     process_manager_init();
     logger_log_ok("Process manager");
+
+    ps2mouse_init();
 
     logger_log_info("MicrOS ready");
     logger_log_info("Created by Application Section of SKNI KOD");

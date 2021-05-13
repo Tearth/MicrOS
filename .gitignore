@@ -61,3 +61,6 @@ docs
 
 cloc.exe
 cloc.bat
+
+.idea
+compile_commands.json
